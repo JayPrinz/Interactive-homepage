@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         },
         options: {
+            
             scales: {
                 y: {
                     beginAtZero: true
