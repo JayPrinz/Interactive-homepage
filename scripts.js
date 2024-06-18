@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 backgroundColor: 'rgba(52, 152, 219, 0.5)',
                 borderColor: 'rgba(52, 152, 219, 1)',
                 borderWidth: 1
+                //borderColor: 'rgba(52, 152, 219, 1)',
+                //borderWidth: 1
             }]
         },
         options: {
