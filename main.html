@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">OrderSys</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Vendors</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Invoices</a></li>
+                </ul>
+            </nav>
+            <button class="logout">Log out</button>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Home Dashboard</h1>
+            </header>
+            <section class="dashboard">
+                <div class="card">
+                    <h2>Cash flow overview</h2>
+                    <p class="cash-flow-amount">+$12,856.14</p>
+                    <canvas id="cashFlowChart"></canvas>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Total receivables</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <p>On-time: $16,780</p>
+                        <p>Overdue: $2,394</p>
+                    </div>
+                    <div class="card">
+                        <h3>Total payables</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                        <p>On-time: $9,340</p>
+                        <p>Overdue: $400</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Cash flow data</h3>
+                    <p>Cash on 01/01/2023: $20,000</p>
+                    <p>Incoming: +$79,490</p>
+                    <p>Outgoing: -$17,320</p>
+                </div>
+                <div class="card">
+                    <h3>Projects</h3>
+                    <p>Software: Billed $5,900 | Unbilled $3,200 | Expected $9,670</p>
+                    <p>Onboarding: Billed $700 | Unbilled $560 | Expected $1,500</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
